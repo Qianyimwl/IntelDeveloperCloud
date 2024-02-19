@@ -21,7 +21,7 @@ RUN apt update && DEBIAN_FRONTEND=noninteractive apt install -y \
     wget
 
 # 下载并解压noVNC
-RUN wget https://github.com/novnc/noVNC/archive/refs/tags/v1.2.0.tar.gz && tar -xvf v1.2.0.tar.gz
+RUN wget https://github.com/novnc/noVNC/archive/refs/tags/v1.2.0.tar.gz && tar -xvf v1.4.0.tar.gz
 
 # 配置VNC密码和启动脚本
 RUN mkdir $HOME/.vnc \
